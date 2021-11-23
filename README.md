@@ -25,12 +25,6 @@ Gerencie e acompanhe seus treinos na academia
 
 &nbsp;&nbsp;&nbsp;
 
-<div align="center">
-  <img align="center" src="./assets/schema.png" width="450px"/>
-</div>
-
-&nbsp;&nbsp;&nbsp;
-
 <div id="how-use"></div>
 
 ## 🚀 Como executar
