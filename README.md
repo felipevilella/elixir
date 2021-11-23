@@ -53,6 +53,50 @@ Por fim, a aplicação estará disponível em `http://localhost:4000`
 ## Dicas
 - Acesso ao dashbord `http://localhost:4004/dashboard/home`
 - Acesso ao painel de teste do graphql `localhost:4004/api/graphiql`
+- Criar uma migration `mix ecto.gen.migration nameTable`
+- Subir migration `mix ecto.migrate`
+- Abrir console `iex -S mix`
 - Exemplo para buscas e inserção de dados no graphQL
+- obter dados de usuario: `{
+  getUser(id: "5491666a-ae19-4f3b-a2eb-f325f41618a5") {
+    id,
+    email
+    name,
+    trainings {
+      id
+      exercises {
+        name
+        repetitions
+      }
+    }
+  }
+}`
+- inserir treinos e exercicios: `mutation {
+  createTraining(input: {
+    start_date: "2021-06-22",
+    end_date: "2021-07-22",
+    user_id: "5491666a-ae19-4f3b-a2eb-f325f41618a5",
+    exercices: [
+      {
+      name: "Gemeos banco",
+      youtube_video_url: "www.google.com",
+      protocol_description: "regular",
+      repetitions: "4x15"
+      },
+      {
+      name: "Triceps corda",
+      youtube_video_url: "www.google.com",
+      protocol_description: "regular",
+      repetitions: "4x15"
+     }
+    ]
+  }){
+    id,
+    exercises {
+      id,
+      name
+    }
+  }
+}`
 ---
 
