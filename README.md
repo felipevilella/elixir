@@ -1,7 +1,3 @@
-<div align="center">
-  <img align="center" src="./assets/wabanex-logo.png" width="300px"/>
-</div>
-&nbsp;
 <p align="center">
   <a href="#techs">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -56,6 +52,7 @@ Por fim, a aplicação estará disponível em `http://localhost:4000`
 - Criar uma migration `mix ecto.gen.migration nameTable`
 - Subir migration `mix ecto.migrate`
 - Abrir console `iex -S mix`
+- Executar teste `mix phx test`
 - Exemplo para buscas e inserção de dados no graphQL
 - obter dados de usuario: `{
   getUser(id: "5491666a-ae19-4f3b-a2eb-f325f41618a5") {
